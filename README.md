@@ -2,6 +2,8 @@
 
 Express enables view template compilation caching in production (when `NODE_ENV` is `production`) which can improve performance. `express-view-cache-clean` can watch view file changes to clean relative caches.
 
+`NOTICE: only supported ejs template!!`
+
 ## Installation
 
 ```shell

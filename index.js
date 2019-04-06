@@ -52,6 +52,15 @@ const matchRule = (filename) => (r) => {
   return false
 }
 
+const removeEjsCache = (key) => {
+  try {
+    const ejs = require('ejs')
+    ejs.cache.set(key, undefined)
+  } catch (e) {
+
+  }
+}
+
 const removeCache = (filename, app) => (r) => {
   if (!r.cache) {
     throw new Error(`rule '${r.filename}', cache can not set empty.`)
@@ -74,16 +83,19 @@ const removeCache = (filename, app) => (r) => {
       const h = caches[i]
       if (typeof h === 'string') {
         if (h === '*' || key.includes(h)) {
+          removeEjsCache(view.path)
           delete app.cache[name]
           break
         }
       } else if (typeof h === 'function') {
         if (h(view, filename, app)) {
+          removeEjsCache(view.path)
           delete app.cache[name]
           break
         }
       } else if (h instanceof RegExp) {
         if (h.test(key)) {
+          removeEjsCache(view.path)
           delete app.cache[name]
           break
         }

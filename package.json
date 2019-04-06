@@ -1,6 +1,6 @@
 {
   "name": "express-view-cache-clean",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "auto clean express view cache in production mode",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
@@ -21,7 +21,8 @@
     "eslint-plugin-standard": "^4.0.0"
   },
   "peerDependencies": {
-    "express": "^4.0.0"
+    "express": "^4.0.0",
+    "ejs": "^2.0.0"
   },
   "keywords": [
     "express",
