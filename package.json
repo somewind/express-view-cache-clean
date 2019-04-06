@@ -1,0 +1,47 @@
+{
+  "name": "express-view-cache-clean",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "auto clean express view cache in production mode",
+  "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "devDependencies": {
+    "commitizen": "3.0.2",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0"
+  },
+  "keywords": [
+    "express",
+    "view",
+    "cache",
+    "clean",
+    "view-cache-clean"
+  ],
+  "bugs": "https://github.com/somewind/express-view-cache-clean/issues",
+  "homepage": "https://github.com/somewind/express-view-cache-clean",
+  "repository": "https://github.com/somewind/express-view-cache-clean.git",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "node-watch": "^0.6.0"
+  }
+}
