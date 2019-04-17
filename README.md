@@ -104,7 +104,7 @@ expressViewCacheClean({
 **Watch Options**
 
 The usage and options are compatible with [fs.watch](https://nodejs.org/dist/latest-v7.x/docs/api/fs.html#fs_fs_watch_filename_options_listener).
-* `persistent: Boolean` (default **true**)
+* `persistent: Boolean` (default **false**, this is different from `fs.watch`)
 * `recursive: Boolean` (default **false**)
 * `encoding: String` (default **'utf8'**)
 * `filter: RegExp | Function` (default **null**)

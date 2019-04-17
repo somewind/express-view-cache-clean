@@ -2,7 +2,7 @@ const watch = require('node-watch')
 
 const defaultOptions = {
   app: undefined,
-  persistent: true,
+  persistent: false, // must be false, very dangerous!!!
   recursive: false,
   encoding: 'utf8',
   filter: undefined,
